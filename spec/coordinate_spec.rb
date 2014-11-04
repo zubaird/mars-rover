@@ -1,5 +1,6 @@
 require 'spec_helper'
 
+
 describe Rover::Coordinate do
 
   describe 'after initialization' do
@@ -60,18 +61,7 @@ describe Rover::Coordinate do
   end
 
   describe '#==' do
-    context "when X(&Y) of one coordinate == X(&Y) of another coordinate" do
-      it "coordinate at (3,3) should == coordinate at (3,3)" do
-        coordinate = Rover::Coordinate.new(3,3)
-        another_coordinate = Rover::Coordinate.new(3,3)
-        expect(coordinate == another_coordinate).to be true
-      end
-      it "coordinate at (3,3) should != coordinate at (3,4)" do
-        coordinate = Rover::Coordinate.new(3,3)
-        another_coordinate = Rover::Coordinate.new(3,4)
-        expect(coordinate == another_coordinate).to be false
-      end
-    end
+    
     # look at tests for Card and try to reproduce == tests
   end
 end
