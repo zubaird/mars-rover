@@ -61,7 +61,6 @@ describe Rover::Coordinate do
   end
 
   describe '#==' do
-    
     # look at tests for Card and try to reproduce == tests
   end
 end
