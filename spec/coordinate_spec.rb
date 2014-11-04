@@ -1,6 +1,5 @@
 require 'spec_helper'
 
-
 describe Rover::Coordinate do
 
   describe 'after initialization' do
