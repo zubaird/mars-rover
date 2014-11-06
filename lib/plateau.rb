@@ -8,6 +8,7 @@ module Rover
           @coordinates << Coordinate.new(x,y)
         end
       end
+      # puts "Building Plateau"
     end
 
     def coordinates
@@ -19,7 +20,7 @@ module Rover
     end
 
     def valid_coordinate? coordinate
-      coordinate.valid? && 
+      coordinate.valid? &&
       ((0..@xsize).include?(coordinate.x) && (0..@ysize).include?(coordinate.y))
     end
 

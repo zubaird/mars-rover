@@ -2,6 +2,7 @@ module Rover
   class Coordinate
     def initialize(x, y)
       @x, @y = x, y
+      # puts "Building Coordinate"
     end
 
     def valid?
