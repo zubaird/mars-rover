@@ -1,7 +1,6 @@
 module Rover
   class Coordinate
-<<<<<<< HEAD
-=======
+
     def initialize(x, y)
       @x, @y = x, y
       # puts "Building Coordinate"
@@ -40,6 +39,5 @@ module Rover
       @y
     end
 
->>>>>>> ac06a1d8c70854e26ef18122c089945a6dc525e8
   end
 end
