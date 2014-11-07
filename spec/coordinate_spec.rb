@@ -4,7 +4,7 @@ require 'spec_helper'
 describe Rover::Coordinate do
 
   describe 'after initialization' do
-    xit "has an x coordinate" do
+    it "has an x coordinate" do
       coordinate = Rover::Coordinate.new(1, 3)
       expect(coordinate.x).to be == 1
     end
