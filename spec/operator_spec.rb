@@ -5,7 +5,7 @@ describe Rover::Operator do
     pending('do all the other specs first')
   end
 
-  it "setsup up a plateau" do
+  xit "setsup up a plateau" do
     operator = Rover::Operator.new('00S')
     expect(operator.plateau).to be_instance_of(Rover::Plateau)
   end
@@ -23,9 +23,10 @@ describe Rover::Operator do
   end
 
   xit "#run runs each of the commands on the cart" do
-    operator = Rover::Operator.new('00S')
-    operator.run_command("MMLM")
-    expect(cart.coordinate).to be == Coordinate.new(1, 2)
+    operator = Rover::Operator.new('00N')
+    operator.run_command("MMRM")
+    cart = operator.cart
+    expect(cart.coordinate).to be == Rover::Coordinate.new(1, 2)
   end
 
   xit "#reset setsup the cart coordinates again" do
